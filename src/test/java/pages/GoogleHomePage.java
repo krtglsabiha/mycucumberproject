@@ -9,11 +9,13 @@ import utilities.Driver;
 public class GoogleHomePage {
     public GoogleHomePage(){
         PageFactory.initElements(Driver.getDriver(),this);
+        System.out.println();
     }
     @FindBy(name = "q")
     public WebElement googleSearchBox;
 
     @FindBy(xpath = "//div[contains(.,'cookies')]//button[contains(.,'Godkänn alla')]")
     public WebElement acceptCookiesSwedish;
+
 
 }
