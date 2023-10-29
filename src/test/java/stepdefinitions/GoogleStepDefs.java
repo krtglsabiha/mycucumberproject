@@ -3,9 +3,13 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
+import pages.DataTablesPage;
 import pages.GoogleHomePage;
 import utilities.Driver;
+import utilities.WaitUtils;
+
 public class GoogleStepDefs {
+
     GoogleHomePage googleHomePage = new GoogleHomePage();
     @Given("user is on the google home page")
     public void user_is_on_the_google_home_page() {
@@ -18,7 +22,7 @@ public class GoogleStepDefs {
     }
     @Given("user search for iPhone")
     public void user_search_for_i_phone() {
-        googleHomePage.googleSearchBox.sendKeys("iPhone"+ Keys.ENTER);
+        googleHomePage.googleSearchBox.sendKeys("iPhone" + Keys.ENTER);
     }
     @Then("verify the result contains iPhone")
     public void verify_the_result_contains_i_phone() {
@@ -32,5 +36,11 @@ public class GoogleStepDefs {
     @Then("verify the result contains porcelain tea pot")
     public void verify_the_result_contains_porcelain_tea_pot() {
         Assert.assertTrue(Driver.getDriver().getTitle().contains("porcelain tea pot"));
+    }
+    @Given("user search for {string} on google")
+    public void user_search_for_on_google(String string) {
+        googleHomePage.googleSearchBox.sendKeys(string);
+        googleHomePage.searchBtn.click();
+
     }
 }

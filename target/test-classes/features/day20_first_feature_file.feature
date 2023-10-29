@@ -3,14 +3,17 @@ Feature: google_search_feature
 #It executed BEFORE EACH SCENARIO KEYWORD
   Background: navigation_google_homepage
     Given user is on the google home page
-#  @iphone
+  @iphone
   Scenario: TC01_iphone_search
     And user search for iPhone
     Then verify the result contains iPhone
-#  @tea_pot
+
+  @tea_pot
   Scenario: TC02_tea_pot_search
     And search for porcelain tea pot
     Then verify the result contains porcelain tea pot
+
+
 #FEATURE FILE**********************************************************************
 #  All feature files have .feature extensions
 #  Feature files are written in Gherkin language
@@ -26,4 +29,4 @@ Feature: google_search_feature
 #  Use the templates and add them in your step definitions folder
 #  Then complete your java code using page object model
 #  @tags are used to run specific test scenarios. we can use multiple tags
-  #Background is used for repeated pre conditions. it runs before each scenario keyword
+# Background is used for repeated pre conditions. It runs before each Scenario keyword.
