@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="1.032" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="xyz bank test" name="xyz bank customer" time="0.112">
+<failure/>
+<system-out><![CDATA[
+Given Go to url https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login.undefined
+When Click on Bank Manager Login button.....................................skipped
+And Click on Add Customer button............................................skipped
+And Fill inputs and click on "Add Customer" form Accept alert...............skipped
+]]></system-out>
+</testcase>
+</testsuite>
