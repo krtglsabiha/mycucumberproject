@@ -1,12 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="1.032" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="xyz bank test" name="xyz bank customer" time="0.112">
-<failure/>
+<testsuite name="Cucumber" time="29.137" tests="2" skipped="0" failures="1" errors="0">
+<testcase classname="grid_feature" name="TC01_chrome_test" time="8.843">
+<failure type="org.openqa.selenium.SessionNotCreatedException" message="Could not start a new session. Response code 500. Message: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 119.0.6045.105 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DESKTOP-F2U1LH4', ip: '192.168.10.106'
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: driver.version: unknown
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: driver.version: unknown
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}">
+<![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 119.0.6045.105 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DESKTOP-F2U1LH4', ip: '192.168.10.106'
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: driver.version: unknown
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: driver.version: unknown
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+	at stepdefinitions.GridStepDefs.user_navigates_to_using_browser(GridStepDefs.java:23)
+	at ✽.user navigates to "https://github.com/" using "chrome" browser(file:///C:/Users/icuvo/Desktop/sabiha/mycucumberproject/./src/test/resources/features/grid/grid.feature:5)
+]]>
+</failure>
 <system-out><![CDATA[
-Given Go to url https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login.undefined
-When Click on Bank Manager Login button.....................................skipped
-And Click on Add Customer button............................................skipped
-And Fill inputs and click on "Add Customer" form Accept alert...............skipped
+Given user navigates to "https://github.com/" using "chrome" browser........failed
+Then verify the title contains "GitHub".....................................skipped
+Then close the remote driver................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="grid_feature" name="TC02_firefox_test" time="19.1">
+<system-out><![CDATA[
+Given user navigates to "https://github.com/" using "firefox" browser.......passed
+Then verify the title contains "GitHub".....................................passed
+Then close the remote driver................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

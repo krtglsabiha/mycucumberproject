@@ -1,0 +1,25 @@
+*****selenium grid*****
+official documentation : https://www.selenium.dev/documentation/grid/getting_started/
+1. Prerequisites
+*Java 11 or higher installed
+*Browser(s) installed - chrome and firefox
+*Browser driver(s)
+*Selenium Manager will configure the drivers automatically if you add --selenium-manager true.
+Installed and on the PATH
+Download the Selenium Server jar file from the latest release
+--------------------------------------
+2. Create a folder under project : SeleniumServer
+----------------------------------------
+3. * Download all below and move them in the SeleniumServer folder. Make sure the files are UNZIPPED
+        *Selenium Server :https://www.selenium.dev/documentation/grid/getting_started/
+        *Chrome Driver   :https://chromedriver.chromium.org/downloads
+        *Firefox Driver  :https://github.com/mozilla/geckodriver/releases
+--------------------------------------------
+4. Open the intelliJ terminal or your local terminal, then navigate to SeleniumServer
+*ls : list of the child folders
+*cd : change directory
+--->>> cd SeleniumServer
+---------------------------------------------
+5. Run tests of selenium grid standalone mode
+* java -jar selenium-server-<version>.jar standalone
+* java -jar selenium-server-4.15.0.jar standalone

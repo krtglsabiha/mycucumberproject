@@ -1,1 +1,1 @@
-file:src/test/resources/features/xyzbank_test.feature:4
+file:src/test/resources/features/grid/grid.feature:4
